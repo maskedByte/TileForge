@@ -1,10 +1,10 @@
-# TileWorks · Tileset Tool
+# TileForge · Tileset Tool
 
 A free, browser-based tileset tool — no server, no tracking, no data leaves your browser.
 
-**[tileworks.net](https://tileworks.net)**
+**[tileforge.net](https://tileforge.net)**
 
-Free, made with ❤️ by [elexity](https://github.com/maskedByte/TileWorks).
+Free, made with ❤️ by [elexity](https://github.com/maskedByte/TileForge).
 
 ---
 
