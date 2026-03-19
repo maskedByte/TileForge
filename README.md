@@ -1,8 +1,10 @@
-# Tileset Tool
+# TileWorks · Tileset Tool
 
-A free, browser-based tool for creating and splitting tileset images — no server, no tracking, no data leaves your browser.
+A free, browser-based tileset tool — no server, no tracking, no data leaves your browser.
 
-Made with ❤️ and Privacy by [elexity](https://github.com/maskedByte).
+**[tileworks.net](https://tileworks.net)**
+
+Made with ❤️ and Privacy by [elexity](https://github.com/maskedByte/TileWorks).
 
 ---
 
@@ -11,30 +13,33 @@ Made with ❤️ and Privacy by [elexity](https://github.com/maskedByte).
 ### 🗂️ Create Tileset
 Combine multiple individual tile images into a single tileset PNG.
 
-- Upload PNG/JPG images via drag & drop or file picker
+- Upload PNG/JPG images via drag & drop or file picker into the library
 - Configure tile size (width × height) and number of columns
 - **Auto-fill** — automatically distribute all library images across the grid
 - Manually drag images from the library onto specific grid cells
-- **Swap tiles** via drag & drop between grid positions (card-swap mechanic)
+- **Swap tiles** via drag & drop between grid positions
 - Images with a different size than the configured tile size trigger a scale confirmation dialog before placing
 - Zoom (scroll) and pan (Alt+drag or middle-click) the canvas
+- Toggle between Nearest and Linear display rendering (editor display only — does not affect the exported PNG)
 - Download the finished tileset as a single `tileset.png`
 
 ### ✂️ Split by Grid
 Extract individual tiles from an existing tileset using a regular grid.
 
-- Load a tileset image from the library or by direct drop/file pick
+- Load a tileset image from the library
 - Configure tile width, height, X/Y offset and X/Y spacing
 - Live grid overlay shows exactly which tiles will be extracted
+- Toggle display rendering (editor only)
 - Download all extracted tiles as a ZIP archive (`tile_RR_CC.png` naming)
 
 ### 🔲 Split Freely
 Extract tiles from a tileset without a fixed grid — draw your own selection rectangles.
 
-- Load a tileset image
+- Load a tileset image from the library
 - Draw, move and resize selection rectangles freely on the canvas
 - Each selection can be renamed in the side panel
 - Pixel-perfect, anti-alias-free selection borders at any zoom level
+- Toggle display rendering (editor only)
 - Export all selections as a ZIP archive (filenames from selection labels)
 
 ---
@@ -48,31 +53,6 @@ Images are persisted in `sessionStorage` for the duration of the browser session
 
 ---
 
-## Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) 18 or later
-- npm
-
-### Install & Run
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The output is a fully static site in `dist/` — host it anywhere (GitHub Pages, Netlify, a plain file server, etc.).
-
----
-
 ## Tech Stack
 
 | | |
@@ -83,8 +63,3 @@ The output is a fully static site in `dist/` — host it anywhere (GitHub Pages,
 | Rendering | HTML5 Canvas API |
 | Styling | CSS Modules |
 
----
-
-## License
-
-Free and open source. Use it, fork it, improve it.
