@@ -4,7 +4,7 @@ A free, browser-based tileset tool — no server, no tracking, no data leaves yo
 
 **[tileworks.net](https://tileworks.net)**
 
-Made with ❤️ and Privacy by [elexity](https://github.com/maskedByte/TileWorks).
+Free, made with ❤️ by [elexity](https://github.com/maskedByte/TileWorks).
 
 ---
 
